@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/xin-lai/Magicodes.AI</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>
+AI处理通用库
+官方网址：http://xin-lai.com
+开源库地址:https://github.com/xin-lai
+博客地址：http://www.cnblogs.com/codelove/
+交流QQ群：85318032
+小店地址：https://shop113059108.taobao.com/
+    </Description>
+    <Company>湖南心莱信息科技有限公司</Company>
+    <Authors>雪雁</Authors>
+    <PackageProjectUrl>http://www.cnblogs.com/codelove/</PackageProjectUrl>
+  </PropertyGroup>
+</Project>

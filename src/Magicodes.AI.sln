@@ -3,14 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.AI.Core", "Magicodes.AI.Core\Magicodes.AI.Core.csproj", "{FF811B18-C4F5-4297-9E2E-DEB04A92C566}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.AI.Core", "Magicodes.AI.Core\Magicodes.AI.Core.csproj", "{FF811B18-C4F5-4297-9E2E-DEB04A92C566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.AI.Baidu", "Magicodes.AI.Baidu\Magicodes.AI.Baidu.csproj", "{0402FCFE-4E02-4786-8A74-9F262B899A44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.AI.Baidu", "Magicodes.AI.Baidu\Magicodes.AI.Baidu.csproj", "{0402FCFE-4E02-4786-8A74-9F262B899A44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.AI.Tests", "Magicodes.AI.Tests\Magicodes.AI.Tests.csproj", "{28B2E2B2-D01B-4A66-8026-BF94CD0DD444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.AI.Tests", "Magicodes.AI.Tests\Magicodes.AI.Tests.csproj", "{28B2E2B2-D01B-4A66-8026-BF94CD0DD444}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AAD768E-0311-4CA5-BDBC-31F21B1176E7}"
 	ProjectSection(SolutionItems) = preProject
+		..\common.props = ..\common.props
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
