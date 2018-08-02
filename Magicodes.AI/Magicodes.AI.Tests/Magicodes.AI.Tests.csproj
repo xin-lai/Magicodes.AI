@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+    <PackageReference Include="Shouldly" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-1.png" />
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-2.png" />
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-3.png" />
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-4.png" />
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-5.png" />
+    <EmbeddedResource Include="images\IdCard\Front\demo-card-6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Magicodes.AI.Baidu\Magicodes.AI.Baidu.csproj" />
+    <ProjectReference Include="..\Magicodes.AI.Core\Magicodes.AI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="images\IdCard\Back\" />
+  </ItemGroup>
+
+</Project>
