@@ -10,11 +10,17 @@ namespace Magicodes.AI.Tests
         {
             BaiduAiBuilder
                 .Create()
-                .RegisterGetConfigFunc(() => new Baidu.Configuration.BaiduApiConfiguration()
+                .RegisterGetOcrConfigFunc(() => new Baidu.Configuration.BaiduApiConfiguration()
                 {
                     AppId = "dh0inRxNjGwoXaUaOfOE72Gf",
                     SecurityKey = "gh7Ow0IvsAVa8Y6cFEDGnjXgelrddrIB"
-                }).Build();
+                })
+                .RegisterGetNlpConfigFunc(() => new Baidu.Configuration.BaiduApiConfiguration()
+                {
+                    AppId = "20180917000208040",
+                    SecurityKey = "S23s5LMrg8CqaUfm97PB"
+                })
+                .Build();
         }
 
         protected Stream GetManifestResourceStream(string path)

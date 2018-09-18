@@ -25,7 +25,9 @@ namespace Magicodes.AI.Baidu.Builder
     /// </summary>
     public class BaiduAiBuilder
     {
-        private Func<BaiduApiConfiguration> GetConfigFunc { get; set; }
+        private Func<BaiduApiConfiguration> GetOcrConfigFunc { get; set; }
+
+        private Func<BaiduApiConfiguration> GetNlpConfigFunc { get; set; }
 
         /// <summary>
         ///     创建实例
@@ -41,9 +43,15 @@ namespace Magicodes.AI.Baidu.Builder
         /// </summary>
         /// <param name="func"></param>
         /// <returns></returns>
-        public BaiduAiBuilder RegisterGetConfigFunc(Func<BaiduApiConfiguration> func)
+        public BaiduAiBuilder RegisterGetOcrConfigFunc(Func<BaiduApiConfiguration> func)
         {
-            GetConfigFunc = func;
+            GetOcrConfigFunc = func;
+            return this;
+        }
+
+        public BaiduAiBuilder RegisterGetNlpConfigFunc(Func<BaiduApiConfiguration> func)
+        {
+            GetNlpConfigFunc = func;
             return this;
         }
 
@@ -52,8 +60,10 @@ namespace Magicodes.AI.Baidu.Builder
         /// </summary>
         public void Build()
         {
-            if (GetConfigFunc != null)
-                BaiduAiHelper.GetConfigFunc = GetConfigFunc;
+            if (GetOcrConfigFunc != null)
+                BaiduAiHelper.GetOcrConfigFunc = GetOcrConfigFunc;
+            if (GetNlpConfigFunc != null)
+                BaiduAiHelper.GetNlpConfigFunc = GetNlpConfigFunc;
         }
     }
 }
