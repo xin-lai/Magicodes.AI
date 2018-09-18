@@ -24,9 +24,9 @@ namespace Magicodes.AI.Tests
         {
             var result = _baiduTranslateService.Translate(new TranslateInput()
             {
-                TranslatedText = "Name",
-                FromLanguage = null,
-                ToLanguage = TranslateLanguage.en,
+                TranslatedText = "Name\nAge\nLast Modifier User Id",
+                FromLanguage = TranslateLanguage.en,
+                ToLanguage = TranslateLanguage.zh,
                 RequestType = RequestType.Http
             });
             result.ShouldNotBeNull();
